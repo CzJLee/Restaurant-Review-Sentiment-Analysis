@@ -1,0 +1,4 @@
+Model vectorized_1gram with MAE 0.397 and MSE 0.569
+Model vectorized_2gram with MAE 0.361 and MSE 0.469
+Model vectorized_idf with MAE 0.388 and MSE 0.541
+Model vectorized_categorical with MAE 0.303 and MSE 0.440
