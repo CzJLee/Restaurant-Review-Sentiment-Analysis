@@ -2,3 +2,7 @@ Model vectorized_1gram with MAE 0.397 and MSE 0.569
 Model vectorized_2gram with MAE 0.361 and MSE 0.469
 Model vectorized_idf with MAE 0.388 and MSE 0.541
 Model vectorized_categorical with MAE 0.303 and MSE 0.440
+Model sequence_embedded with MAE 0.309 and MSE 0.376
+Model sequence_embedded_categorical with MAE 0.280 and MSE 0.413
+Model transformer with MAE 0.362 and MSE 0.436
+Model transformer_categorical with MAE 0.315 and MSE 0.508
