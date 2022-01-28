@@ -7,3 +7,4 @@ Model sequence_embedded_categorical with MAE 0.280 and MSE 0.413
 Model transformer with MAE 0.362 and MSE 0.436
 Model transformer_categorical with MAE 0.315 and MSE 0.508
 Model vectorized_categorical_idf_fast_train with MAE 0.298 and MSE 0.451
+Model large_sequence_embedded_model with MAE 0.373 and MSE 0.472
