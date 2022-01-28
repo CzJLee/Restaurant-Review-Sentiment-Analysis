@@ -53,18 +53,18 @@ Using NLP and Sentiment Analysis, predict the star rating using various ML model
 
 ### [train_large_model.ipynb](train_large_model.ipynb)
 
-- The final step is to try and train on the entire review dataset. This dataset is too large to fit into memory and process. I used the TF Record format and TF Dataset API to shard the dataset to allow for parallel and balanced datasets. 
+- The final step is to try and train on the entire review dataset. This dataset is too large to fit into memory and process. To resolve this, and to use TF Record files, I built a custom TF Sharded Record Writer class. I then adjusted the training process to handle a model with a large amount of parameters and a large dataset. 
 
 ## Project Accomplishments
 
 There were multiple tasks that I accomplished in this project
 - Training on TPUs using Google Colab cloud TPU environment
-- Read JSON in chunks using Pandas to create a subset of a larger dataset
-- Implement and test different Text Vectorizer for Natural Language Processing (NLP) including Bag of Words, Bigram Vectorization, and Term Frequency Inverse Document Frequency (TF-IDF) 
-- Construct a sequential text model using an embedding layer and bidirectional LSTM layers
+- Read JSON in chunks using Pandas to create a subset of a larger dataset too large to load into memory
+- Implement and test different Text Vectorizations for Natural Language Processing (NLP) including Bag of Words, Bigram Vectorization, and Term Frequency Inverse Document Frequency (TF-IDF) 
+- Construct a sequential text model using an Embedding layer and Bidirectional LSTM layers
 - Use Transformer layers for text encoding
 - Use TF Dataset API to optimize data pipeline, and speedup TPU training
-- Parse a large dataset into sharded TF Record files using TF Record Writer
+- Build a custom TF Sharded Record Writer class to shard a large dataset into multiple TF Record files
 - Use TF Datasets to create balanced Train, Validation, and Test datasets
 - Develop a training pipeline to train a large dataset on Google Colab cloud GPUs
 
